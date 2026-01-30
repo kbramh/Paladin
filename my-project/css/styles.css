@@ -1,4 +1,4 @@
-#topnav ul {
+.topnav ul {
   display: flex;
   flex-direction: row;
   list-style: none;
@@ -7,7 +7,7 @@
   gap: 1.5rem;
 }
 
-#topnav a {
+.topnav a {
   color: blue;
   border-radius: 16px;
   font-size: 24px;
@@ -15,7 +15,7 @@
   padding: 16px;
 }
 
-#topnav a:hover {
+.topnav a:hover {
   color: green;
   background-color: rgba(59, 130, 246, 0.1);
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
