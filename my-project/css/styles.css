@@ -30,6 +30,7 @@
 
 .topnav a {
   color: blue;
+  text-decoration: none;
   border-radius: 16px;
   font-size: 24px;
   margin: 0 0 32px 0;
