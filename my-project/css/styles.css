@@ -1,27 +1,28 @@
 .navbar {
   display: flex;
-  flex-direction: row;
   align-items: center;
-  margin-left: auto;
   gap: 1.5rem;
 }
 
 .logo {
+  color: blue;
   display: flex;
-  flex-direction: row;
   list-style: none;
   margin: 0;
-  padding: 0;
-  gap: 1.5rem;
-  color: blue;
   border-radius: 16px;
-  font-size: 36px;
+  font-size: 32px;
   padding: 16px;
+}
+
+.nav-right {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
 .topnav ul {
   display: flex;
-  flex-direction: row;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -42,6 +43,10 @@
   background-color: rgba(59, 130, 246, 0.1);
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
   transform: translateY(-2px);
+}
+
+.right-icons {
+  margin: 16px;
 }
 
 .right-icons a {
