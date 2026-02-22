@@ -4,6 +4,13 @@
   gap: 1.5rem;
 }
 
+.mainbody {
+  display: flex;
+  flex-direction: column; 
+  align-items: flex-start;
+  padding: 16px;
+}
+
 .logo {
   color: blue;
   display: flex;
