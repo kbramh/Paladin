@@ -13,6 +13,10 @@ const formSubmitButtonValue = document.querySelector('#form-submit-button');
 
 function onSubmit(e) {
   e.preventDefault();
+
+  setTimeout(function () {
+    input.value = '';
+  });
 }
 
 formSubmitButtonValue.addEventListener('submit', onSubmit);
