@@ -1,12 +1,20 @@
 .navbar {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 1.5rem;
+}
+
+.mainbody {
+  display: flex;
+  flex-direction: column; 
+  align-items: flex-start;
+  padding: 16px;
 }
 
 .logo {
   color: blue;
   display: flex;
+  flex-direction: column; 
   list-style: none;
   margin: 0;
   border-radius: 16px;
@@ -52,3 +60,12 @@
 .right-icons a {
   text-decoration: none;
 }
+
+/* selectors for report-fraud html page shown below */
+
+.submit1 {
+  border: 2px solid green;
+  box-shadow: none;
+  
+}
+
