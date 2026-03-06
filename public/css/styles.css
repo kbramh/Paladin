@@ -8,6 +8,36 @@ body {
       padding: 20px;
 }
 
+.contact-container {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.12);
+  max-width: 900px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap; 
+}
+
+.form-side {
+  background: var(--light); 
+  flex: 1;
+  min-width: 320px;
+  padding: 60px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 14px;
+  margin: 12px 0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
 .logo {
   color: blue;
   display: flex;
@@ -59,6 +89,11 @@ body {
 .submit1 {
   border: 2px solid green;
   box-shadow: none;
+}
+
+textarea {
+  min-height: 120px;
+  resize: vertical;
 }
 
 .topnav a {
