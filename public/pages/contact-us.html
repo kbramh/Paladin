@@ -1,45 +1,25 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>contact-us</title>
-    <link rel="stylesheet" href="/public/css/styles.css" />
-  </head>
-  <body>
-    <header class="navbar">
-      <div class="logo">Logo 5</div>
-      <nav class="nav-right">
-        <div class="topnav">
-          <ul>
-            <li>
-              <a href="/public/index.html">Home</a>
-            </li>
-            <li>
-              <a href="/public/pages/report-fraud.html">Report Fraud</a>
-            </li>
-            <li>
-              <a href="/public/pages/community-rules.html">Community Rules</a>
-            </li>
-            <li>
-              <a href="/public/pages/faqs.html">FAQs</a>
-            </li>
-            <li>
-              <a href="/public/pages/contact-us.html">Contact Us</a>
-            </li>
-          </ul>
-        </div>
-        <div class="right-icons">
-          <a href="#">🔍</a>
-        </div>
-      </nav>
-    </header>
-    <main class="mainbody">
-      <form id="form-submit-button">
-        <input class="submit1" id="submit1" />
-        <button id="submitbutton">Submit</button>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="/public/css/styles.css"></link>
+</head>
+<body>
+
+    <div class="form-side">
+      <h1>Get in Touch</h1>
+      <p>We're here to help — drop us a message!</p>
+      
+      <form>
+        <input type="text"    name="name"    placeholder="Your Name"    required>
+        <input type="email"   name="email"   placeholder="Email Address" required>
+        <input type="tel"     name="phone"   placeholder="Phone (optional)">
+        <textarea name="message" placeholder="How can we help you?" required></textarea>
+        <button type="submit">Send Message</button>
       </form>
-    </main>
-    <script src="/public/js/contact-us.js" type="module"></script>
-  </body>
+    </div>
+<script src="/public/js/contact-us.js" type="module"></script>
+</body>
 </html>
