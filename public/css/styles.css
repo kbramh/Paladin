@@ -1,17 +1,24 @@
+/* to apply root attributes, use notation var(--light); or var(--primary); as the value. */
+
+:root {
+  --primary: #0066cc;
+  --light: #f8f9fa;
+}
+
 body {
-      font-family: system-ui, sans-serif;
-      background: linear-gradient(135deg, #e3f2fd, #bbdefb);
-      min-height: 100vh;
-      margin: 0;
-      display: grid;
-      place-items: center;
-      padding: 20px;
+  font-family: system-ui, sans-serif;
+  background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+  min-height: 100vh;
+  margin: 0;
+  display: grid;
+  place-items: center;
+  padding: 20px;
 }
 
 .contact-container {
   background: white;
   border-radius: 16px;
-  box-shadow: 0 10px 40px rgba(0,0,0,0.12);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.12);
   max-width: 900px;
   width: 100%;
   overflow: hidden;
@@ -19,17 +26,18 @@ body {
 
 .content {
   display: flex;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
 }
 
 .form-side {
-  background: var(--light); 
+  background: var(--light);
   flex: 1;
   min-width: 320px;
   padding: 60px;
 }
 
-input, textarea {
+input,
+textarea {
   width: 100%;
   padding: 14px;
   margin: 12px 0;
@@ -77,15 +85,6 @@ input, textarea {
   text-decoration: none;
 }
 
-/* to apply root attributes, use notation var(--light); or var(--primary); as the value. */
-
-:root {
-      --primary: #0066cc;
-      --light: #f8f9fa;
-}
-
-/* selectors for report-fraud html page shown below */
-
 .submit1 {
   border: 2px solid green;
   box-shadow: none;
@@ -119,4 +118,3 @@ textarea {
   padding: 0;
   gap: 1.5rem;
 }
-
