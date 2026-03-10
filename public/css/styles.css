@@ -1,9 +1,9 @@
 /* to apply root attributes, use notation var(--light); or var(--primary); as the value. */
 
-/*:root {
+:root {
   --primary: #0066cc;
   --light: #f8f9fa;
-}*/
+}
 
 body {
   font-family: system-ui, sans-serif;
