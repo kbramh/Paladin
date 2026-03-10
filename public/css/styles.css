@@ -1,11 +1,18 @@
 /* to apply root attributes, use notation var(--light); or var(--primary); as the value. */
 
-:root {
+/*:root {
   --primary: #0066cc;
   --light: #f8f9fa;
-}
+}*/
 
 body {
+  font-family: system-ui, sans-serif;
+  min-height: 100vh;
+  margin: 0;
+  padding: 20px;
+}
+
+#contact-us {
   font-family: system-ui, sans-serif;
   background: linear-gradient(135deg, #e3f2fd, #bbdefb);
   min-height: 100vh;
@@ -13,6 +20,7 @@ body {
   display: grid;
   place-items: center;
   padding: 20px;
+
 }
 
 .contact-container {
