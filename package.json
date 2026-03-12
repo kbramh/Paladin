@@ -4,12 +4,14 @@
   "description": "Paladin - a software application to help individuals report fraud.",
   "scripts": {
     "format": "prettier .",
-    "format:fix": "prettier --write ."
+    "format:fix": "prettier --write .",
+    "prepare": "husky"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "husky": "^9.1.7",
     "prettier": "^3.8.1"
   }
 }
