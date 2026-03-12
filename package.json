@@ -3,7 +3,8 @@
   "version": "0.1.0",
   "description": "Paladin - a software application to help individuals report fraud.",
   "scripts": {
-    "format": "prettier --write ."
+    "format": "prettier .",
+    "format:fix": "prettier --write ."
   },
   "keywords": [],
   "author": "",
