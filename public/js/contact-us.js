@@ -7,7 +7,7 @@ function logButtonValue(e) {
 
 submitButtonValue.addEventListener("click", logButtonValue);
 
-const formSubmitButtonValue = document.querySelector("#form-submit-button");
+const form = document.querySelector("#form");
 
 //function onSubmit(); fixes a console refresh bug caused by the nature of the form element being used.
 
@@ -19,4 +19,4 @@ function onSubmit(e) {
   });
 }
 
-formSubmitButtonValue.addEventListener("submit", onSubmit);
+form.addEventListener("submit", onSubmit);
