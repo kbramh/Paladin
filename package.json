@@ -1,0 +1,14 @@
+{
+  "name": "paladin",
+  "version": "0.1.0",
+  "description": "Paladin - a software application to help individuals report fraud.",
+  "scripts": {
+    "format": "prettier --write ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "prettier": "^3.8.1"
+  }
+}
