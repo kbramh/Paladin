@@ -1,15 +1,41 @@
 /* to apply root attributes, use notation var(--light); or var(--primary); as the value. */
 
-/*:root {
+:root {
   --primary: #0066cc;
   --light: #f8f9fa;
-}*/
+}
 
 body {
   font-family: system-ui, sans-serif;
   min-height: 100vh;
   margin: 0;
   padding: 20px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 14px;
+  margin: 12px 0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.btn-styling {
+  background: linear-gradient(145deg, oklch(65% 0.15 240), oklch(55% 0.15 240));
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  padding: 0.75em 0.5em;
+  line-height: 1; /* ~12–16px vertical, 24–32px horizontal */
+  min-height: 44px; /* iOS/Android touch target minimum */
+  min-width: 100px; /* helps avoid tiny buttons */
+  padding: 0.75em 0.5em;
 }
 
 #contact-us {
@@ -20,7 +46,6 @@ body {
   display: grid;
   place-items: center;
   padding: 20px;
-
 }
 
 .contact-container {
@@ -37,21 +62,35 @@ body {
   flex-wrap: wrap;
 }
 
+.contact-us-navigation-bar li a {
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.contact-us-navigation-bar li a:hover {
+  color: green;
+  background-color: rgba(59, 130, 246, 0.1);
+  border-radius: 12px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.contact-us-navigation-bar ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  align-items: center;
+  border-radius: 16px;
+  margin: 0 0 32px 0;
+  padding: 16px;
+  gap: 1.5rem;
+}
+
 .form-side {
   background: var(--light);
   flex: 1;
   min-width: 320px;
   padding: 60px;
-}
-
-input,
-textarea {
-  width: 100%;
-  padding: 14px;
-  margin: 12px 0;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  font-size: 1rem;
 }
 
 .logo {
@@ -62,7 +101,7 @@ textarea {
   margin: 0;
   border-radius: 16px;
   font-size: 32px;
-  padding: 16px;
+  padding: 12px;
 }
 
 .mainbody {
@@ -96,11 +135,6 @@ textarea {
 .submit1 {
   border: 2px solid green;
   box-shadow: none;
-}
-
-textarea {
-  min-height: 120px;
-  resize: vertical;
 }
 
 .topnav a {
