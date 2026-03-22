@@ -43,7 +43,7 @@ function onSubmit(e) {
   }
 
   setTimeout(function () {
-    input.value = "";
+    document.querySelector(".textcontent").textContent = "";
   }, 100);
 }
 
