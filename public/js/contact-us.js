@@ -24,7 +24,6 @@ const form = document.querySelector("#form");
 function onSubmit(e) {
   e.preventDefault();
   const formFields = form.querySelectorAll("input, textarea");
-  let anyEmpty = false;
 
   formFields.forEach((el) => {
     const value = el.value.trim();
@@ -36,9 +35,9 @@ function onSubmit(e) {
     }
   });
 
-  if (anyEmpty) {
+  if (anyEmpty === true) {
     const firstEmpty = Array.from(formFields).find((el) => !el.value.trim());
-    if (firstEmpty) firstEmpty.focus();
+    firstEmpty.focus();
     return;
   }
 
