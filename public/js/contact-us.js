@@ -1,11 +1,19 @@
 const submitButtonValue = document.querySelector("#submitbutton");
-const input = document.querySelector("#submit1");
+const input = document.querySelector(".textcontent");
 
-function logButtonValue(e) {
+function logInputFieldValue(e) {
   console.log(input.value);
+  console.log(document.querySelector(".textcontent:nth-child(2)").value);
+
+  e.preventDefault();
+
+  setTimeout(function () {
+    input.value = "";
+    document.querySelector(".textcontent:nth-child(2)").value = "";
+  });
 }
 
-submitButtonValue.addEventListener("click", logButtonValue);
+submitButtonValue.addEventListener("click", logInputFieldValue);
 
 const form = document.querySelector("#form");
 
