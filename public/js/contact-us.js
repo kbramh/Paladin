@@ -4,12 +4,14 @@ const input = document.querySelector(".textcontent");
 function logInputFieldValue(e) {
   console.log(input.value);
   console.log(document.querySelector(".textcontent:nth-child(2)").value);
-
-  e.preventDefault();
+  console.log(document.querySelector(".textcontent:nth-child(3)").value);
+  console.log(document.querySelector(".textcontent:nth-child(4)").value);
 
   setTimeout(function () {
     input.value = "";
     document.querySelector(".textcontent:nth-child(2)").value = "";
+    document.querySelector(".textcontent:nth-child(3)").value = "";
+    document.querySelector(".textcontent:nth-child(4)").value = "";
   });
 }
 
@@ -21,10 +23,28 @@ const form = document.querySelector("#form");
 
 function onSubmit(e) {
   e.preventDefault();
+  const formFields = form.querySelectorAll("input, textarea");
+  let anyEmpty = false;
+
+  formFields.forEach((el) => {
+    const value = el.value.trim();
+    if (!value) {
+      el.style.borderColor = "red";
+      anyEmpty = true;
+    } else {
+      el.style.borderColor = "";
+    }
+  });
+
+  if (anyEmpty) {
+    const firstEmpty = Array.from(formFields).find((el) => !el.value.trim());
+    if (firstEmpty) firstEmpty.focus();
+    return;
+  }
 
   setTimeout(function () {
     input.value = "";
-  });
+  }, 100);
 }
 
 form.addEventListener("submit", onSubmit);
