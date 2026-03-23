@@ -1,49 +1,58 @@
-const submitButtonValue = document.querySelector("#submitbutton");
-const input = document.querySelector(".textcontent");
+const form = document.querySelector("#form");
+const submitButton = document.querySelector("#submitbutton");
 
-function logInputFieldValue(e) {
-  console.log(input.value);
-  console.log(document.querySelector(".textcontent:nth-child(2)").value);
-  console.log(document.querySelector(".textcontent:nth-child(3)").value);
-  console.log(document.querySelector(".textcontent:nth-child(4)").value);
+function logAndClearFields() {
+  const fields = form.querySelectorAll(".textcontent");
 
-  setTimeout(function () {
-    input.value = "";
-    document.querySelector(".textcontent:nth-child(2)").value = "";
-    document.querySelector(".textcontent:nth-child(3)").value = "";
-    document.querySelector(".textcontent:nth-child(4)").value = "";
+  fields.forEach((field, index) => {
+    console.log(`Field ${index + 1}: ${field.value}`);
+  });
+
+  fields.forEach((field) => {
+    field.value = "";
   });
 }
 
-submitButtonValue.addEventListener("click", logInputFieldValue);
+function validateForm(e) {
+  e.preventDefault(); // Prevent page refresh
 
-const form = document.querySelector("#form");
+  let hasError = false;
 
-//function onSubmit(); fixes a console refresh bug caused by the nature of the form element being used.
+  // Get all our input/textarea fields
+  const fields = form.querySelectorAll(".textcontent");
 
-function onSubmit(e) {
-  e.preventDefault();
-  const formFields = form.querySelectorAll("input, textarea");
+  // Reset borders first
+  fields.forEach((field) => {
+    field.style.borderColor = "";
+  });
 
-  formFields.forEach((el) => {
-    const value = el.value.trim();
-    if (!value) {
-      el.style.borderColor = "red";
-      anyEmpty = true;
-    } else {
-      el.style.borderColor = "";
+  // Check required fields
+  fields.forEach((field) => {
+    if (field.hasAttribute("required") && !field.value.trim()) {
+      field.style.borderColor = "red";
+      hasError = true;
     }
   });
 
-  if (anyEmpty === true) {
-    const firstEmpty = Array.from(formFields).find((el) => !el.value.trim());
-    firstEmpty.focus();
-    return;
-  }
+  if (hasError) {
+    // Find first empty required field and focus it
+    const firstEmpty = Array.from(fields).find((f) => f.hasAttribute("required") && !f.value.trim());
+    if (firstEmpty) firstEmpty.focus();
 
-  setTimeout(function () {
-    document.querySelector(".textcontent").textContent = "";
-  }, 100);
+    // Show error message
+    alert("Please fill in all required fields.");
+  } else {
+    // SUCCESS: log values + clear fields (your original intent)
+    logAndClearFields();
+    alert("Message sent! (This is where real submission would happen)");
+    // Later you can replace the alert with actual fetch/email code
+  }
 }
 
-form.addEventListener("submit", onSubmit);
+// Attach to form submit (cleaner than button click for validation)
+form.addEventListener("submit", validateForm);
+
+// Optional: If you really want something extra on button click
+submitButton.addEventListener("click", () => {
+  console.log("Submit button was clicked");
+});
