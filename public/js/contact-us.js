@@ -23,7 +23,7 @@ const form = document.querySelector("#form");
 
 function onSubmit(e) {
   e.preventDefault();
-  const formFields = form.querySelectorAll("input, textarea");
+  const formFields = form.querySelectorAll(".textcontent");
 
   formFields.forEach((el) => {
     const value = el.value.trim();
