@@ -40,8 +40,15 @@ function validateForm(e) {
     alert("Please fill in all required fields.");
   } else {
     logFields();
+    clearForm();
     alert("Message sent! (This is where real submission would happen)");
   }
 }
 
-form.addEventListener("submit", validateForm);
+function preventRefresh() {
+  e.preventDefault(); // Prevent page refresh
+}
+
+form.addEventListener("submit", preventRefresh);
+
+submitButton.addEventListener("click", validateForm);

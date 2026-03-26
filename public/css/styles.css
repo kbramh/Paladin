@@ -12,16 +12,6 @@ body {
   padding: 20px;
 }
 
-input,
-textarea {
-  width: 100%;
-  padding: 14px;
-  margin: 12px 0;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  font-size: 1rem;
-}
-
 textarea {
   min-height: 120px;
   resize: vertical;
@@ -151,6 +141,20 @@ textarea {
 .submit1 {
   border: 2px solid green;
   box-shadow: none;
+}
+
+.textcontent {
+  width: 100%;
+  padding: 14px;
+  margin: 12px 0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+input:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.5);
 }
 
 .topnav a {
