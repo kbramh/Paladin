@@ -1,22 +1,54 @@
-const submitButtonValue = document.querySelector("#submitbutton");
-const input = document.querySelector("#submit1");
-
-function logButtonValue(e) {
-  console.log(input.value);
-}
-
-submitButtonValue.addEventListener("click", logButtonValue);
-
 const form = document.querySelector("#form");
+const submitButton = document.querySelector("#submitbutton");
 
-//function onSubmit(); fixes a console refresh bug caused by the nature of the form element being used.
+function logFields() {
+  const fields = form.querySelectorAll(".textcontent");
 
-function onSubmit(e) {
-  e.preventDefault();
-
-  setTimeout(function () {
-    input.value = "";
+  fields.forEach((field, index) => {
+    console.log(`Field ${index + 1}: ${field.value}`);
   });
 }
 
-form.addEventListener("submit", onSubmit);
+function clearForm() {
+  const fields = form.querySelectorAll(".textcontent");
+
+  fields.forEach((field) => {
+    field.value = "";
+  });
+}
+
+function validateForm(e) {
+  e.preventDefault(); // Prevent page refresh
+
+  let hasError = false;
+
+  const fields = form.querySelectorAll(".textcontent");
+
+  fields.forEach((field) => {
+    if (field.hasAttribute("required") && !field.value.trim()) {
+      field.style.borderColor = "red";
+      hasError = true;
+    } else {
+      field.style.borderColor = "";
+    }
+  });
+
+  if (hasError) {
+    const firstEmpty = Array.from(fields).find((f) => f.hasAttribute("required") && !f.value.trim());
+    if (firstEmpty) firstEmpty.focus();
+
+    alert("Please fill in all required fields.");
+  } else {
+    logFields();
+    clearForm();
+    alert("Message sent! (This is where real submission would happen)");
+  }
+}
+
+function preventRefresh() {
+  e.preventDefault(); // Prevent page refresh
+}
+
+form.addEventListener("submit", preventRefresh);
+
+submitButton.addEventListener("click", validateForm);
