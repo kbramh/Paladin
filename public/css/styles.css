@@ -84,6 +84,11 @@ textarea {
   background: linear-gradient(135deg, #e3f2fd, #bbdefb);
 }
 
+.faq-list {
+  display: flex;
+  gap: 60px;
+}
+
 .form-side {
   background: var(--light);
   flex: 1;
