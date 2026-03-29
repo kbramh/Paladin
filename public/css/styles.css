@@ -32,6 +32,7 @@ textarea {
   display: grid;
   font-family: "Courier New", Courier, monospace;
   place-items: center;
+  padding-top: 50px;
 }
 
 #contact-us-base-styling {
