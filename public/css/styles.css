@@ -22,10 +22,37 @@ textarea {
   border-radius: 0.5rem;
   font-size: 1rem;
   padding: 0.75em 0.5em;
-  line-height: 1; /* ~12–16px vertical, 24–32px horizontal */
-  min-height: 44px; /* iOS/Android touch target minimum */
+  line-height: 1;
+  min-height: 44px;
   min-width: 100px; /* helps avoid tiny buttons */
   padding: 0.75em 0.5em;
+}
+
+.breadcrumb {
+  display: flex; /*makes it horizontal*/
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 12px;
+}
+
+.breadcrumb a {
+  text-decoration: none;
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+.breadcrumb li {
+  display: flex;
+  align-items: center;
+}
+
+.breadcrumb span {
+  font-weight: 500;
 }
 
 .center-ribbon {
