@@ -169,6 +169,16 @@ textarea {
   gap: 1rem;
 }
 
+.panel-heading {
+  padding: 10px 15px
+  border-bottom 1px solid transparent;
+  border-top-left-radius: 3px;
+  border-top-right-radius:3px; 
+  background-color: rgba(59, 130, 246, 0.1);
+  box-shadow: 28px 4px 12px -2px rgba(0, 0, 0, 0.12);
+  transform: translateY(-2px);
+}
+
 #report-fraud-base-styling {
   background: linear-gradient(135deg, #e3f2fd, #bbdefb);
 }
