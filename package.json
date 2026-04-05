@@ -5,12 +5,17 @@
   "scripts": {
     "format": "prettier --list-different .",
     "format:fix": "prettier --list-different --write .",
-    "prepare": "husky"
+    "prepare": "husky",
+    "start": "npx serve . -l 3000",
+    "test": "playwright test",
+    "test:ui": "playwright test --ui"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@playwright/test": "^1.59.1",
+    "@types/node": "^25.5.0",
     "husky": "^9.1.7",
     "prettier": "^3.8.1"
   }
