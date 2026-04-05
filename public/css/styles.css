@@ -90,6 +90,10 @@ textarea {
   flex-wrap: wrap;
 }
 
+.contact-us-navigation-bar {
+  display: flex;
+}
+
 .contact-us-navigation-bar li a {
   font-size: 24px;
   text-decoration: none;
@@ -160,6 +164,11 @@ textarea {
   display: flex;
   align-items: flex-start;
   gap: 1.5rem;
+}
+
+.nav-center {
+  display: flex;
+  align-items: flex-start;
 }
 
 .nav-right {
