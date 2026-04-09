@@ -5,7 +5,8 @@
   "description": "Paladin - a software application to help individuals report fraud.",
   "scripts": {
     "build": "tsc",
-    "dev": "nodemon --watch src --exec \"npm run build && npm start\"",
+    "build:watch": "nodemon --watch src --exec \"npm run build\"",
+    "dev": "concurrently 'npm run build:watch' 'npm start'",
     "format": "prettier --list-different .",
     "format:fix": "prettier --list-different --write .",
     "prepare": "husky",
@@ -19,6 +20,7 @@
   "devDependencies": {
     "@playwright/test": "^1.59.1",
     "@types/node": "^25.5.0",
+    "concurrently": "^9.2.1",
     "husky": "^9.1.7",
     "nodemon": "^3.1.14",
     "prettier": "^3.8.1",
