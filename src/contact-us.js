@@ -1,5 +1,3 @@
-console.log("test");
-
 const form = document.querySelector("#form");
 const submitButton = document.querySelector("#submitbutton");
 
