@@ -7,8 +7,8 @@
 
 body {
   font-family: system-ui, sans-serif;
-  min-height: 100vh;
   margin: 0;
+  min-height: 100vh;
   padding: 20px;
 }
 
@@ -28,13 +28,13 @@ textarea {
 }
 
 .breadcrumb {
+  align-items: center;
   display: flex; /*makes it horizontal*/
   flex-wrap: wrap;
-  align-items: center;
-  list-style: none;
-  padding: 0;
-  margin: 0;
   gap: 12px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .breadcrumb a {
@@ -46,8 +46,8 @@ textarea {
 }
 
 .breadcrumb li {
-  display: flex;
   align-items: center;
+  display: flex;
 }
 
 .breadcrumb span {
@@ -57,18 +57,18 @@ textarea {
 .center-ribbon {
   display: grid;
   font-family: "Courier New", Courier, monospace;
-  place-items: center;
   padding-top: 50px;
+  place-items: center;
 }
 
 #contact-us-base-styling {
-  font-family: system-ui, sans-serif;
   background: linear-gradient(135deg, #e3f2fd, #bbdefb);
-  min-height: 100vh;
-  margin: 0;
   display: grid;
-  place-items: center;
+  font-family: system-ui, sans-serif;
+  margin: 0;
+  min-height: 100vh;
   padding: 20px;
+  place-items: center;
 }
 
 #community-rules-base-styling {
@@ -80,8 +80,8 @@ textarea {
   border-radius: 16px;
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.12);
   max-width: 900px;
-  width: 100%;
   overflow: hidden;
+  width: 100%;
 }
 
 .content {
@@ -96,8 +96,8 @@ textarea {
   display: flex;
   flex-direction: column;
   font-size: 32px;
-  list-style: none;
   left: 0;
+  list-style: none;
   margin: 0;
   padding: 24px;
   position: absolute;
@@ -113,22 +113,22 @@ textarea {
 }
 
 .contact-us-navigation-bar li a:hover {
-  color: green;
   background-color: rgba(59, 130, 246, 0.1);
   border-radius: 12px;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  color: green;
   transform: translateY(-2px);
 }
 
 .contact-us-navigation-bar ul {
-  display: flex;
-  flex-direction: row;
-  list-style: none;
   align-items: center;
   border-radius: 16px;
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  list-style: none;
   margin: 0 0 32px 0;
   padding: 16px;
-  gap: 1.5rem;
 }
 
 #faqs-base-styling {
@@ -152,13 +152,13 @@ textarea {
 }
 
 .logo {
+  border-radius: 16px;
   color: blue;
   display: flex;
   flex-direction: column;
+  font-size: 32px;
   list-style: none;
   margin: 0;
-  border-radius: 16px;
-  font-size: 32px;
   padding: 12px;
 }
 
@@ -167,36 +167,36 @@ textarea {
 }
 
 .mainbody {
+  align-items: flex-start;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   padding: 16px;
 }
 
 .navbar {
-  display: flex;
   align-items: flex-start;
+  display: flex;
   gap: 1.5rem;
 }
 
 .nav-center {
-  display: flex;
   align-items: flex-start;
+  display: flex;
 }
 
 .nav-right {
-  margin-left: auto;
-  display: flex;
   align-items: center;
+  display: flex;
   gap: 1rem;
+  margin-left: auto;
 }
 
 .panel-heading {
-  padding: 10px 15px border-bottom 1px solid transparent;
+  background-color: rgba(59, 130, 246, 0.1);
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
-  background-color: rgba(59, 130, 246, 0.1);
   box-shadow: 28px 4px 12px -2px rgba(0, 0, 0, 0.12);
+  padding: 10px 15px border-bottom 1px solid transparent;
   transform: translateY(-2px);
 }
 
@@ -218,39 +218,39 @@ textarea {
 }
 
 .textcontent {
-  width: 100%;
-  padding: 14px;
-  margin: 12px 0;
   border: 1px solid #ddd;
   border-radius: 8px;
   font-size: 1rem;
+  margin: 12px 0;
+  padding: 14px;
+  width: 100%;
 }
 
 input:focus {
-  outline: none;
   box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.5);
+  outline: none;
 }
 
 .topnav a {
-  color: blue;
-  text-decoration: none;
   border-radius: 16px;
+  color: blue;
   font-size: 24px;
   margin: 0 0 32px 0;
   padding: 16px;
+  text-decoration: none;
 }
 
 .topnav a:hover {
-  color: green;
   background-color: rgba(59, 130, 246, 0.1);
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  color: green;
   transform: translateY(-2px);
 }
 
 .topnav ul {
   display: flex;
+  gap: 1.5rem;
   list-style: none;
   margin: 0;
   padding: 0;
-  gap: 1.5rem;
 }
