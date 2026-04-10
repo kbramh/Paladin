@@ -3,6 +3,8 @@
 
 node_modules
 
+public/js
+
 # Playwright
 /test-results/
 /playwright-report/
