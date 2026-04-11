@@ -1,5 +1,5 @@
-const form = document.querySelector("#form");
-const submitButton = document.querySelector("#submitbutton");
+const form = document.querySelector("#form")!;
+const submitButton = document.querySelector("#submitbutton")!;
 
 function logFields() {
   const fields = form.querySelectorAll(".textcontent");
