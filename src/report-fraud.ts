@@ -1,7 +1,7 @@
 const submitButtonValue = document.querySelector("#submitbutton");
 const input = document.querySelector("#submit1");
 
-function logButtonValue(e) {
+function logButtonValue(e: Event) {
   console.log(input.value);
 }
 
