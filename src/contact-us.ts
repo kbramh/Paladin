@@ -2,7 +2,7 @@ const form = document.querySelector("#form")!;
 const submitButton = document.querySelector("#submitbutton")!;
 
 function logFields() {
-  const fields = form.querySelectorAll<HTMLInputElement>(".textcontent");
+  const fields = form.querySelectorAll<HTMLInputElement | HTMLTextAreaElement>(".textcontent");
 
   fields.forEach((field, index) => {
     console.log(`Field ${index + 1}: ${field.value}`);
@@ -10,7 +10,7 @@ function logFields() {
 }
 
 function clearForm() {
-  const fields = form.querySelectorAll<HTMLInputElement>(".textcontent");
+  const fields = form.querySelectorAll<HTMLInputElement | HTMLTextAreaElement>(".textcontent");
 
   fields.forEach((field) => {
     field.value = "";
@@ -22,7 +22,7 @@ function validateForm(e: Event) {
 
   let hasError = false;
 
-  const fields = form.querySelectorAll<HTMLInputElement>(".textcontent");
+  const fields = form.querySelectorAll<HTMLInputElement | HTMLTextAreaElement>(".textcontent");
 
   fields.forEach((field) => {
     if (field.hasAttribute("required") && !field.value.trim()) {
