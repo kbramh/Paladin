@@ -11,7 +11,7 @@ const formSubmitButtonValue = document.querySelector("#form-submit-button");
 
 //function onSubmit(); fixes a console refresh bug caused by the nature of the form element being used.
 
-function onSubmit(e) {
+function onSubmit(e: Event) {
   e.preventDefault();
 
   setTimeout(function () {
