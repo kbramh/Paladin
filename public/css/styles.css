@@ -151,6 +151,10 @@ textarea {
   background: linear-gradient(135deg, #e3f2fd, #bbdefb);
 }
 
+li::marker {
+  font-size: 1.5em;
+}
+
 .logo {
   border-radius: 16px;
   color: blue;
@@ -202,6 +206,10 @@ textarea {
 
 #report-fraud-base-styling {
   background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+}
+
+.reporting-options {
+  list-style-type: disc;
 }
 
 .right-icons {
