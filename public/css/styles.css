@@ -208,6 +208,15 @@ li::marker {
   background: linear-gradient(135deg, #e3f2fd, #bbdefb);
 }
 
+.report-fraud-main-button {
+  background-color: rgb(92, 184, 92);
+  border-color: rgb(76, 174, 76);
+  border-radius: 4px;
+  color: rgb(51, 51, 51);
+  font-size: 16 px;
+  font-weight: bold;
+}
+
 .reporting-options {
   list-style-type: disc;
 }
