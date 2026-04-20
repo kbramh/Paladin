@@ -5,7 +5,9 @@ function logButtonValue(e: Event) {
   console.log(input?.value);
 }
 
-submitButtonValue.addEventListener("click", logButtonValue);
+if (submitButtonValue) {
+  submitButtonValue.addEventListener("click", logButtonValue);
+}
 
 const formSubmitButtonValue = document.querySelector("#form-submit-button");
 
@@ -19,6 +21,8 @@ function onSubmit(e: Event) {
   });
 }
 
-formSubmitButtonValue.addEventListener("submit", onSubmit);
+if (submitButtonValue) {
+  submitButtonValue.addEventListener("submit", onSubmit);
+}
 
 //This file is not being used in our report fraud page at all.
