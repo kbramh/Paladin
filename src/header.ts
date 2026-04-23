@@ -28,5 +28,3 @@ const headerContent = `
 
 const headerElement = document.querySelector("header")!;
 headerElement.innerHTML = headerContent;
-
-console.log(headerElement);
