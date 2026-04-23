@@ -61,7 +61,7 @@ textarea {
   place-items: center;
 }
 
-#contact-us-base-styling {
+/* #contact-us-base-styling {
   background: linear-gradient(135deg, #e3f2fd, #bbdefb);
   display: grid;
   font-family: system-ui, sans-serif;
@@ -69,7 +69,7 @@ textarea {
   min-height: 100vh;
   padding: 20px;
   place-items: center;
-}
+} */
 
 #community-rules-base-styling {
   background: linear-gradient(135deg, #e3f2fd, #bbdefb);
@@ -101,34 +101,6 @@ textarea {
   margin: 0;
   padding: 12px;
   position: absolute;
-}
-
-.contact-us-navigation-bar {
-  display: flex;
-}
-
-.contact-us-navigation-bar li a {
-  font-size: 24px;
-  text-decoration: none;
-}
-
-.contact-us-navigation-bar li a:hover {
-  background-color: rgba(59, 130, 246, 0.1);
-  border-radius: 12px;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-  color: green;
-  transform: translateY(-2px);
-}
-
-.contact-us-navigation-bar ul {
-  align-items: center;
-  border-radius: 16px;
-  display: flex;
-  flex-direction: row;
-  gap: 1.5rem;
-  list-style: none;
-  margin: 0 0 32px 0;
-  padding: 16px;
 }
 
 #faqs-base-styling {
@@ -181,11 +153,6 @@ li::marker {
   align-items: flex-start;
   display: flex;
   gap: 1.5rem;
-}
-
-.nav-center {
-  align-items: flex-start;
-  display: flex;
 }
 
 .nav-right {
