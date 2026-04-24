@@ -5,7 +5,7 @@
   "description": "Paladin - a software application to help individuals report fraud.",
   "scripts": {
     "build": "tsc",
-    "build:watch": "nodemon --watch src --exec \"npm run build\"",
+    "build:watch": "nodemon --watch src --ext ts --exec \"npm run build\"",
     "dev": "concurrently 'npm run build:watch' 'npm start'",
     "format": "prettier --list-different .",
     "format:fix": "prettier --list-different --write .",
