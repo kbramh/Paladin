@@ -7,16 +7,16 @@ const headerContent = `
                     <a href="/public/index.html">Home</a>
                 </li>
                 <li>
-                    <a href="/public/pages/report-fraud.html">Report Fraud</a>
+                    <a href="/public/pages/reportFraud.html">Report Fraud</a>
                 </li>
                 <li>
-                    <a href="/public/pages/community-rules.html">Community Rules</a>
+                    <a href="/public/pages/communityRules.html">Community Rules</a>
                 </li>
                 <li>
                     <a href="/public/pages/faqs.html">FAQs</a>
                 </li>
                 <li>
-                    <a href="/public/pages/contact-us.html">Contact Us</a>
+                    <a href="/public/pages/contactUs.html">Contact Us</a>
                 </li>
             </ul>
         </div>
