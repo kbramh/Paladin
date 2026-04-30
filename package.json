@@ -6,11 +6,12 @@
   "scripts": {
     "build": "tsc",
     "build:watch": "nodemon --watch src --ext ts --exec \"npm run build\"",
-    "dev": "concurrently 'npm run build:watch' 'npm start'",
+    "dev": "concurrently 'npm run build:watch' 'npm run start:watch'",
     "format": "prettier --list-different .",
     "format:fix": "prettier --list-different --write .",
     "prepare": "husky",
     "start": "node index.js",
+    "start:watch": "nodemon --watch index.js --exec \"npm start\"",
     "test": "playwright test",
     "test:ui": "playwright test --ui"
   },
