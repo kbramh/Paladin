@@ -1,7 +1,6 @@
 {
   "include": ["src/**/*"],
   "compilerOptions": {
-    "allowJs": true,
     "module": "nodenext",
     "outDir": "public/js",
     "rootDir": "src",
