@@ -1,10 +1,21 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact Us</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="/public/css/styles.css" />
+    <script type="importmap">
+      {
+        "imports": {
+          "@material/web/": "https://esm.run/@material/web/"
+        }
+      }
+    </script>
+    <script type="module">
+      import "@material/web/all.js";
+      import { styles as typescaleStyles } from "@material/web/typography/md-typescale-styles.js";
+
+      document.adoptedStyleSheets.push(typescaleStyles.styleSheet);
+    </script>
   </head>
   <body id="faqs-base-styling">
     <header class="navbar"></header>
@@ -13,13 +24,21 @@
         <div class="form-side">
           <h1>Get in Touch</h1>
           <p>We're here to help — drop us a message!</p>
-
           <form id="form">
-            <input class="textcontent" type="text" name="name" placeholder="Your Name" required />
-            <input class="textcontent" type="email" name="email" placeholder="Email Address" required />
-            <input class="textcontent" type="tel" name="phone" placeholder="Phone Number" />
-            <textarea class="textcontent" name="message" placeholder="How can we help you?" required></textarea>
-            <button id="submitbutton" type="submit" class="btn-styling">Send Message</button>
+            <md-outlined-text-field class="textcontent" label="Your name" required type="text" value="">
+            </md-outlined-text-field>
+            <md-outlined-text-field class="textcontent" label="Your email" required type="email" value="">
+            </md-outlined-text-field>
+            <md-outlined-text-field class="textcontent" label="Your phone number" type="tel" value="">
+            </md-outlined-text-field>
+            <style>
+              md-filled-text-field {
+                resize: vertical;
+              }
+            </style>
+            <md-filled-text-field class="textcontent" label="how can we help you?" required rows="3" type="textarea">
+            </md-filled-text-field>
+            <md-filled-button id="submitbutton">Send Message</md-filled-button>
           </form>
         </div>
       </div>
