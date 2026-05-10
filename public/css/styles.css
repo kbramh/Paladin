@@ -177,10 +177,10 @@ li::marker {
 }
 
 .report-fraud-main-button {
-  background-color: rgb(92, 184, 92);
-  border-color: rgb(76, 174, 76);
+  background-color: rgb(128, 0, 128);
+  border-color: rgb(128, 0, 128);
   border-radius: 4px;
-  color: rgb(51, 51, 51);
+  color: rgb(255, 255, 255);
   font-size: 16 px;
   font-weight: bold;
 }
@@ -225,7 +225,7 @@ input:focus {
 .topnav a:hover {
   background-color: rgba(59, 130, 246, 0.1);
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-  color: green;
+  color: purple;
   transform: translateY(-2px);
 }
 
