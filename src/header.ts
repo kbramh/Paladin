@@ -1,22 +1,22 @@
 const headerContent = `
-    <a href="/public/index.html" class="logoAnchorTag"><div class="logo">Logo</div></a>
+    <a href="/" class="logoAnchorTag"><div class="logo">Logo</div></a>
     <nav class="nav-right">
         <div class="topnav">
             <ul>
                 <li>
-                    <a href="/public/index.html">Home</a>
+                    <a href="/">Home</a>
                 </li>
                 <li>
-                    <a href="/public/pages/reportFraud.html">Report Fraud</a>
+                    <a href="/pages/reportFraud.html">Report Fraud</a>
                 </li>
                 <li>
-                    <a href="/public/pages/communityRules.html">Community Rules</a>
+                    <a href="/pages/communityRules.html">Community Rules</a>
                 </li>
                 <li>
-                    <a href="/public/pages/faqs.html">FAQs</a>
+                    <a href="/pages/faqs.html">FAQs</a>
                 </li>
                 <li>
-                    <a href="/public/pages/contactUs.html">Contact Us</a>
+                    <a href="/pages/contactUs.html">Contact Us</a>
                 </li>
             </ul>
         </div>

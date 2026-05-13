@@ -4,14 +4,15 @@
   "version": "0.1.0",
   "description": "Paladin - a software application to help individuals report fraud.",
   "scripts": {
-    "build": "tsc",
-    "build:watch": "nodemon --watch src --ext ts --exec \"npm run build\"",
-    "dev": "concurrently 'npm run build:watch' 'npm run start:watch'",
+    "build": "vite build",
+    "dev": "NODE_ENV=development concurrently 'npm run dev:client' 'npm run dev:server'",
+    "dev:client": "vite dev",
+    "dev:server": "nodemon --watch index.js --exec \"node index.js\"",
     "format": "prettier --list-different .",
     "format:fix": "prettier --list-different --write .",
     "prepare": "husky",
-    "start": "node index.js",
-    "start:watch": "nodemon --watch index.js --exec \"npm start\"",
+    "preview": "vite preview",
+    "start": "NODE_ENV=production node index.js",
     "test": "playwright test",
     "test:ui": "playwright test --ui"
   },
@@ -25,7 +26,8 @@
     "husky": "^9.1.7",
     "nodemon": "^3.1.14",
     "prettier": "^3.8.1",
-    "typescript": "^6.0.2"
+    "typescript": "^6.0.2",
+    "vite": "^8.0.12"
   },
   "dependencies": {
     "express": "^5.2.1"
