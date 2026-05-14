@@ -5,7 +5,7 @@
   "description": "Paladin - a software application to help individuals report fraud.",
   "scripts": {
     "build": "vite build",
-    "dev": "NODE_ENV=development concurrently 'npm run dev:client' 'npm run dev:server'",
+    "dev": "npm run dev:server",
     "dev:client": "vite dev",
     "dev:server": "nodemon --watch index.js --exec \"node index.js\"",
     "format": "prettier --list-different .",
